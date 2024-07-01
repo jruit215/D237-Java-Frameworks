@@ -10,6 +10,10 @@ mainscreen.html:
 - Changed the shop name and added divs (line 18-23)
 
 ### D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+- Created templates/about.html file.
+- Added content to about.html, and created a button to navigate back to mainscreen.html (lines 17-23)
+- Created a GetMapping for the About page in MainScreenControllerr.java (lines 56-59).
+- Added a div container with a button linking to about.html in mainscreen.html (lines 23-25)
 
 ### E.  Add a sample inventory appropriate for your chosen store to the application.
 
