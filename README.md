@@ -17,8 +17,8 @@ mainscreen.html:
 
 ### E.  Add a sample inventory appropriate for your chosen store to the application.
 MainScreenControllerr.java:
-- Added if/else to check if there are 5 parts already added, else this sample inventory gets added (lines 50-110)
-- Added if/else to check if there are 5 products already added, else this sample inventory gets added (lines 115-155)
+- Added if/else to check if there are 5 parts already added, else this sample inventory gets added (lines 50-95)
+- Added if/else to check if there are 5 products already added, else this sample inventory gets added (lines 100-140)
 ### F.  Add a “Buy Now” button to your product list.
 
 ### G.  Modify the parts to track maximum and minimum inventory by doing the following:
