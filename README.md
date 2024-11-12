@@ -4,7 +4,7 @@
 ## D287 – JAVA FRAMEWORKS
 
 ### C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
-mainscreen.html:
+**mainscreen.html:**
 - Changed the title name (line 14)
 - added inline styling to body tag (line 16)
 - Changed the shop name and added divs (line 18-23)
@@ -16,11 +16,11 @@ mainscreen.html:
 - Added a div container with a button linking to about.html in mainscreen.html (lines 23-25)
 
 ### E.  Add a sample inventory appropriate for your chosen store to the application.
-MainScreenControllerr.java:
+**MainScreenControllerr.java:**
 - Added if/else to check if there are 5 parts already added, else this sample inventory gets added (lines 50-95)
 - Added if/else to check if there are 5 products already added, else this sample inventory gets added (lines 100-140)
 ### F.  Add a “Buy Now” button to your product list.
-mainscreen.html:
+**mainscreen.html:**
 - Added a "Buy Now" button (line 93)
 repositories/ProductRepository.java:
 - Added @Query findByOne for theId (line 20-21)
@@ -28,7 +28,8 @@ service/ProductService.java:
 - Added boolean for theId (line 20)
 service/ProductServiceImpl:
 - Added decremental functionality for "Buy Now" button (line 71-83)
-Templates folder:
+
+**Templates folder:**
 - Created success.html for successful purchase
 - Created failure.html for purchase failure
 
