@@ -36,7 +36,7 @@
 - Created success.html for successful purchase
 - Created failure.html for purchase failure
 
-**MainScreenControllerr.java:
+**MainScreenControllerr.java:**
 - Added @GetMapping for the success/failure of the "Buy Now" button, showing the according page
 
 ### G.  Modify the parts to track maximum and minimum inventory by doing the following:
