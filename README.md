@@ -52,6 +52,9 @@
 **OutsourcedPartForm.html**
 - Added max and min form fields (line 26, 28)
 
+**mainscreen.html**
+- edited part table to show min and max inventory count (line 45-46, 55-56)
+
 ### H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
 
