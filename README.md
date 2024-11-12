@@ -43,6 +43,9 @@
 **Part.java:**
 - Added additional fields for maximum and minimum inventory (line 31-32, 87-101)
 
+**MainScreenControllerr.java:**
+- Added sample min & max fields to the parts in sample inventory (line 55-88)
+
 ### H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
 
