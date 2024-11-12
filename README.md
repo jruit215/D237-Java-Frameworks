@@ -20,6 +20,17 @@ MainScreenControllerr.java:
 - Added if/else to check if there are 5 parts already added, else this sample inventory gets added (lines 50-95)
 - Added if/else to check if there are 5 products already added, else this sample inventory gets added (lines 100-140)
 ### F.  Add a “Buy Now” button to your product list.
+mainscreen.html:
+- Added a "Buy Now" button (line 93)
+repositories/ProductRepository.java:
+- Added @Query findByOne for theId (line 20-21)
+service/ProductService.java:
+- Added boolean for theId (line 20)
+service/ProductServiceImpl:
+- Added decremental functionality for "Buy Now" button (line 71-83)
+Templates folder:
+- Created success.html for successful purchase
+- Created failure.html for purchase failure
 
 ### G.  Modify the parts to track maximum and minimum inventory by doing the following:
 

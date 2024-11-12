@@ -45,12 +45,12 @@ public class MainScreenControllerr {
         this.productService=productService;
     }
     @GetMapping("/mainscreen")
-    public String listPartsandProducts(Model theModel, @Param("partkeyword") String partkeyword, @Param("productkeyword") String productkeyword) {
+    public String listPartsandProducts(Model theModel, @Param("partKeyword") String partKeyword, @Param("productKeyword") String productKeyword) {
         //add to the sprig model
-        List<Part> partList = partService.listAll(partkeyword);
+        List<Part> partList = partService.listAll(partKeyword);
         if (partList.size() >= 5) {
             theModel.addAttribute("parts", partList);
-            theModel.addAttribute("partkeyword", partkeyword);
+            theModel.addAttribute("partKeyword", partKeyword);
         } else {
             InhousePart newPart1 = new InhousePart();
             newPart1.setName("Espresso");
@@ -91,16 +91,16 @@ public class MainScreenControllerr {
             newParts.add(newPart6);
 
             theModel.addAttribute("parts", newParts);
-            theModel.addAttribute("partkeyword", partkeyword);
+            theModel.addAttribute("partKeyword", partKeyword);
         }
 
         theModel.addAttribute("parts", partList);
-        theModel.addAttribute("partkeyword", partkeyword);
+        theModel.addAttribute("partKeyword", partKeyword);
         //    theModel.addAttribute("products",productService.findAll());
-        List<Product> productList = productService.listAll(productkeyword);
+        List<Product> productList = productService.listAll(productKeyword);
         if (productList.size() >= 5) {
             theModel.addAttribute("products", productList);
-            theModel.addAttribute("productkeyword", productkeyword);
+            theModel.addAttribute("productKeyword", productKeyword);
             return "mainscreen";
         } else {
             Product newProduct = new Product();
@@ -136,7 +136,7 @@ public class MainScreenControllerr {
             newProducts.add(newProduct5);
 
             theModel.addAttribute("products", productList);
-            theModel.addAttribute("productkeyword", productkeyword);
+            theModel.addAttribute("productKeyword", productKeyword);
             return "mainscreen";
         }
     }
