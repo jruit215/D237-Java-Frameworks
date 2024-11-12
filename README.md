@@ -22,16 +22,22 @@
 ### F.  Add a “Buy Now” button to your product list.
 **mainscreen.html:**
 - Added a "Buy Now" button (line 93)
-repositories/ProductRepository.java:
+
+**repositories/ProductRepository.java:**
 - Added @Query findByOne for theId (line 20-21)
-service/ProductService.java:
+
+**service/ProductService.java:**
 - Added boolean for theId (line 20)
-service/ProductServiceImpl:
+
+**service/ProductServiceImpl:**
 - Added decremental functionality for "Buy Now" button (line 71-83)
 
 **Templates folder:**
 - Created success.html for successful purchase
 - Created failure.html for purchase failure
+
+**MainScreenControllerr.java:**
+- Added @GetMapping for the success/failure of the "Buy Now" button, showing the according page
 
 ### G.  Modify the parts to track maximum and minimum inventory by doing the following:
 
