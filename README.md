@@ -40,6 +40,8 @@
 - Added @GetMapping for the success/failure of the "Buy Now" button, showing the according page
 
 ### G.  Modify the parts to track maximum and minimum inventory by doing the following:
+**Part.java:**
+- Added additional fields for maximum and minimum inventory (line 31-32, 87-101)
 
 ### H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
