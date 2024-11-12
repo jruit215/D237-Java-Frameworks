@@ -46,10 +46,10 @@
 **MainScreenControllerr.java:**
 - Added sample min & max fields to the parts in sample inventory (line 55-88)
 
-**InhousePartForm.html**
+**InhousePartForm.html:**
 - Added max and min form fields (line 25, 27)
 
-**OutsourcedPartForm.html**
+**OutsourcedPartForm.html:**
 - Added max and min form fields (line 26, 28)
 
 **mainscreen.html**
