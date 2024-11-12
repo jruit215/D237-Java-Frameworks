@@ -141,9 +141,18 @@ public class MainScreenControllerr {
         }
     }
 
-    @GetMapping("http://localhost:8080/about")
+    @GetMapping("/about")
     public String aboutPage(){
         return "about";
+    }
+
+    @GetMapping("/buyPage")
+    public String successOrFailure(@RequestParam("productID") long product) {
+        if (productService.buyNow(product)) {
+            return "success";
+        } else {
+            return "failure";
+        }
     }
 
 }
