@@ -52,43 +52,47 @@ public class MainScreenControllerr {
             theModel.addAttribute("parts", partList);
             theModel.addAttribute("partKeyword", partKeyword);
         } else {
-            InhousePart newPart1 = new InhousePart();
-            newPart1.setName("Espresso");
-            newPart1.setInv(20);
-            newPart1.setPrice(1.5);
+            InhousePart newPart = new InhousePart();
+            newPart.setName("Espresso");
+            newPart.setInv(20);
+            newPart.setPrice(1.5);
+            newPart.setMax(15);
+            newPart.setMin(2);
 
             InhousePart newPart2 = new InhousePart();
             newPart2.setName("Vanilla Syrup");
             newPart2.setInv(3);
             newPart2.setPrice(0.5);
+            newPart.setMax(15);
+            newPart.setMin(2);
 
             InhousePart newPart3 = new InhousePart();
-            newPart3.setName("Chai Mix");
-            newPart3.setInv(4);
-            newPart3.setPrice(1.0);
+            newPart3.setName("Milk");
+            newPart3.setInv(6);
+            newPart3.setPrice(0.5);
+            newPart.setMax(15);
+            newPart.setMin(2);
 
             InhousePart newPart4 = new InhousePart();
-            newPart4.setName("Milk");
-            newPart4.setInv(6);
-            newPart4.setPrice(0.5);
+            newPart4.setName("Black Tea");
+            newPart4.setInv(10);
+            newPart4.setPrice(1.0);
+            newPart.setMax(15);
+            newPart.setMin(2);
 
             InhousePart newPart5 = new InhousePart();
-            newPart5.setName("Black Tea");
-            newPart5.setInv(10);
-            newPart5.setPrice(1.0);
-
-            InhousePart newPart6 = new InhousePart();
-            newPart6.setName("Matcha Powder");
-            newPart6.setInv(7);
-            newPart6.setPrice(2.5);
+            newPart5.setName("Matcha Powder");
+            newPart5.setInv(7);
+            newPart5.setPrice(2.5);
+            newPart.setMax(15);
+            newPart.setMin(2);
 
             List<Part> newParts = new ArrayList<>();
-            newParts.add(newPart1);
+            newParts.add(newPart);
             newParts.add(newPart2);
             newParts.add(newPart3);
             newParts.add(newPart4);
             newParts.add(newPart5);
-            newParts.add(newPart6);
 
             theModel.addAttribute("parts", newParts);
             theModel.addAttribute("partKeyword", partKeyword);
@@ -109,7 +113,7 @@ public class MainScreenControllerr {
             newProduct.setPrice(4.0);
 
             Product newProduct2 = new Product();
-            newProduct2.setName("Chai Latte");
+            newProduct2.setName("Americano");
             newProduct2.setInv(10);
             newProduct2.setPrice(4.5);
 
