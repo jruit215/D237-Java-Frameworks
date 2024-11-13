@@ -19,6 +19,7 @@
 **MainScreenControllerr.java:**
 - Added if/else to check if there are 5 parts already added, else this sample inventory gets added (lines 50-95)
 - Added if/else to check if there are 5 products already added, else this sample inventory gets added (lines 100-140)
+
 ### F.  Add a “Buy Now” button to your product list.
 **mainscreen.html:**
 - Added a "Buy Now" button (line 93)
@@ -39,7 +40,7 @@
 **MainScreenControllerr.java:**
 - Added @GetMapping for the success/failure of the "Buy Now" button, showing the according page
 
-### G.  Modify the parts to track maximum and minimum inventory by doing the following:
+### G.  Modify the parts to track maximum and minimum inventory.
 **Part.java:**
 - Added additional fields for maximum and minimum inventory (line 31-32, 87-101)
 
@@ -55,19 +56,22 @@
 **mainscreen.html:**
 - Edited part table to show min and max inventory count (line 45-46, 55-56)
 
-**application.properties**
+**application.properties:**
 - Renamed file where the persistent storage is saved to (line 6-8)
 
-**Part.java**
+**Part.java:**
 - Added @ValidPartInventory validator class (line 20)
 
-**validators folder**
+**validators folder:**
 - Created ValidPartInventory.java && PartInventoryValidator
 - These files ensure the inventory is at or between user-set max and min inventory levels
 
-### H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
+### H.  Add validation for between or at the maximum and minimum fields.
+**InhousePartForm.html:**
+- Added global errors catch if there are any errors that occur (line 30-34)
 
-
+**OutsourcedPartForm.html:**
+- Added global errors catch if there are any errors that occur (line 31-35)
 
 ### I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
