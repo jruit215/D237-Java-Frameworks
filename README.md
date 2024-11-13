@@ -58,7 +58,15 @@
 **application.properties**
 - Renamed file where the persistent storage is saved to (line 6-8)
 
+**Part.java**
+- Added @ValidPartInventory validator class (line 20)
+
+**validators folder**
+- Created ValidPartInventory.java && PartInventoryValidator
+- These files ensure the inventory is at or between user-set max and min inventory levels
+
 ### H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
+
 
 
 ### I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.

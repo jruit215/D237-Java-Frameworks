@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import com.example.demo.validators.ValidDeletePart;
+import com.example.demo.validators.ValidPartInventory;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -16,6 +17,7 @@ import java.util.Set;
  */
 @Entity
 @ValidDeletePart
+@ValidPartInventory(message="Inventory must be between the set maximum and minimum values")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="part_type",discriminatorType = DiscriminatorType.INTEGER)
 @Table(name="Parts")
