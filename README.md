@@ -74,7 +74,7 @@
 - Added global errors catch if there are any errors that occur (line 31-35)
 
 ### I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
-**PartTest.java**
+**PartTest.java:**
 - (line 160-195)
 
 ### J. Remove class files for any unused validators in order to clean your code.
