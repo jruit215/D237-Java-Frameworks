@@ -1,5 +1,5 @@
 ## WGU Coursework
-### Java Frameworks Project
+### Java Frameworks Project -- Web-Based Spring Inventory Application
 
 ## SCENARIO
 You are working for a company that licenses and customizes a software application to keep track of inventory in stores. Your job as a software developer is to customize this application to meet a specific customer’s needs. You will choose any type of customer you would like, but it must sell a product composed of parts. An example of products versus parts would be a customer that’s a bicycle shop: a bicycle is a product, and a set of two matching wheels is a part (do not use the bicycle shop example in your project).
